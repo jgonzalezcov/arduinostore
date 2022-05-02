@@ -1,0 +1,198 @@
+/***************ESTILOS DEL BODY***********************************************************/
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Verdana, sans-serif;
+}
+/***************ESTILOS BODY/HEADER***********/
+.header {
+  display: flex; /*Se debe declarar al principio anates de llamar los puntos de abajo*/
+  align-items: center; /*centrado vertical con flex*/
+  height: 10em; /*Esto es el interlineado*/
+  background-image: url('../img/arduino_head.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border: solid 4px #1ca4ac;
+  margin-bottom: 2%;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  border-style: groove;
+  line-height: 28px;
+  /**** Dejar cabecera fija */
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+  left: 0; /* Posicionamos la cabecera al lado izquierdo */
+  top: 0; /* Posicionamos la cabecera pegada arriba */
+  position: fixed; /* Hacemos que la cabecera tenga una posición*/
+}
+body {
+  background-color: #b8dcdd;
+  margin-top: 12em;
+}
+
+.header img {
+  width: 9em;
+  margin-left: 27em;
+}
+
+.header_text {
+  text-align: left;
+}
+
+.header_text h1,
+h2 {
+  margin: 0%;
+}
+
+/***************ESTILOS BODY/PRODUCTS*******/
+.products {
+  width: 80%;
+  margin: auto;
+}
+.products td {
+  width: 8%;
+  padding: 1em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+}
+
+td.img_product {
+  background-color: #18a1a7;
+  width: 5%;
+}
+.products img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/***************ESTILOS BODY/FOOTER**********/
+.footer {
+  height: 3em;
+  line-height: 3em;
+  background-color: #1ca4a7;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  border: solid 4px #1ca4a7;
+  margin-top: 1%;
+  padding-bottom: 2%;
+  line-height: 50px;
+  display: flex; /*Se debe declarar al principio anates de llamar los puntos de abajo*/
+  align-items: center; /*centrado vertical con flex*/
+}
+
+/***************ESTILOS TABLAS, FILAS Y COLUMNAS**********/
+
+.tabla_productos th,
+.tabla_productos td {
+  border: solid 5px #1ca4a7; /*!important antes del punto y coma para dar prioridad al estilo sobre los otros (SE DEBE UTILIZAR COMO ULTIMO RECURSO*/
+}
+
+.tabla_productos {
+  border-collapse: separate;
+  border: solid 5px #1ca4a7;
+  border-radius: 10px;
+}
+
+.tabla_productos th {
+  background-color: #18a1a7;
+  color: white;
+}
+
+.nom_product {
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-left: 4px;
+}
+
+.producto_e_imagen {
+  display: flex; /*Se debe declarar al principio anates de llamar los puntos de abajo*/
+  align-items: center; /*centrado vertical con flex*/
+  justify-content: center; /*justificado horizontal con flex*/
+}
+
+.producto_e_imagen img {
+  width: 2rem;
+  padding-top: 2%;
+}
+.producto_e_imagen h3 {
+  margin: 0.5rem;
+}
+.valores {
+  padding-left: 1em;
+}
+
+.valor_con_descuento {
+  color: red;
+  font-weight: 500;
+}
+
+.valor_con_otro_mp {
+  color: green;
+  font-weight: 500;
+}
+.descuento {
+  margin-left: 0.5em;
+  color: white;
+  font-weight: 500;
+  background-color: red;
+  width: 2.6em;
+  border-radius: 4px;
+}
+.descuento_omp {
+  margin-left: 0.5em;
+  color: white;
+  font-weight: 500;
+  background-color: green;
+  width: 2.6em;
+  border-radius: 4px;
+}
+
+.desc_valor {
+  display: flex; /*Se debe declarar al principio anates de llamar los puntos de abajo*/
+  align-items: center; /*centrado vertical con flex*/
+  font-size: larger;
+}
+
+.precio_normal {
+  text-decoration: line-through;
+  font-size: medium;
+  margin-top: 3em;
+}
+
+.efectivo {
+  margin: 0px;
+  height: 3em;
+}
+
+.oferta_o_m_pago {
+  margin: 0px;
+  height: 3em;
+}
+
+.calificacion {
+  width: 10em;
+  height: 3em;
+}
+
+.medios_p {
+  width: 9em;
+  margin-top: 2em;
+  margin-left: 15em;
+}
+
+.footer h3 {
+  margin-left: 30em;
+}
+/*ANCHO DE COLUMNAS*/
+table td:first-child {
+  width: 25%;
+}
+/*Si se quieren mas columnas solo se debe continuar con la numeracion(CAMBIAR EL 2 POR EL NUMERO CORRESPONDIENTE*/
+table td:nth-child(2) {
+  width: 53%;
+}
+
+table td:last-child {
+  width: 22%;
+}
